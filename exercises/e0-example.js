@@ -10,7 +10,7 @@ export function getFirstPlanetName(data) {
   //console.log(planets);
   return planets[0].name;
 }
-
+ 
 
 
 // === TEST YOURSELF ===

@@ -16,7 +16,7 @@
 - If the test results have all tests passed (no red comments), consider it to be finished successfully, then switch to the next exercise file.
 - If any of the tests fails, refactor the code and run the test command after you've fixed the function. Please, don't switch to the next exercise file until the current one is finished successfully.
 - The goal is to write proper code for every exercise file and pass ALL tests successfully.
-- Once you have finished ALL files you can run ALL tests to test yourself with ```npm run test-all```
+- Once you have finished ALL files you can run ALL tests to test yourself with ```npm run test-all``` 
 
 ### CAUTION
 Please, do **NOT** change or update:

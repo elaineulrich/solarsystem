@@ -21,4 +21,4 @@ describe("getAsteroidNames", () => {
       '243 Ida', '951 Gaspra', '15760 Albion', 'Arrokoth', '101955 Bennu'
     ]);
   });
-});
+}); 
