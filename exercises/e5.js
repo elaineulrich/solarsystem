@@ -5,10 +5,10 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetsWithMassValue(data, number) {
-  const planetsData = data.filter(planet => planet.massValue >= number);
-  
-  const planetNamesWithMassValue = planetsData.map(planet => planet.name);
-  
+  const planetsData = data.mass || [];
+  const planetsWithMassValue = planetsData.filter(planet => planet.massValue >= 4);
+  const planetNamesWithMassValue = planetsWithMassValue.map(planet => planet.name);
+
   return planetNamesWithMassValue;
 }
 
