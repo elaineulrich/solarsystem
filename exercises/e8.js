@@ -5,15 +5,12 @@ import { data } from "../data/data";
 // Return example: 'Planet Name'
 
 export function findPlanetNameByMoon(data, moonName) {
-  const planets = data.planets || [];
+  const planet = data.planets.find(planet => 
+    planet.moons && planet.moons.includes(moonName)
+  );
   
-  const planetWithMoon = planets.find(planet => {
-    return (planet.moons || []).some(moon => moon === moonName);
-  });
-
-  return planetWithMoon ? planetWithMoon.name : null;
+  return planet ? planet.name : 'Planet not found';
 }
-
 
 
 
