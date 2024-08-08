@@ -6,13 +6,9 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function lowMoonsPlanets(data) {
-  const planets = data.planets || [];
-  
-  const lowMoonsPlanets = planets.filter(planet => (planet.moons || []).length < 10);
-
-  const planetNames = lowMoonsPlanets.map(planet => planet.name);
-
-  return planetNames;
+  return data.planets
+  .filter(planet => (planet.moons || []).length < 10)
+  .map(planet => planet.name);
 }
 
 
